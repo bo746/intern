@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page not found – Oromia Investment and Industry Bureau</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* 404 Page Custom Styles */
+    body {
+      background: #ffffff;
+      color: #1f2937;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .error-404-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 1.5rem 5rem;
+      text-align: center;
+      background: #ffffff;
+    }
+    
+    .error-404-img-wrap {
+      max-width: 520px;
+      width: 100%;
+      margin: 0 auto 2rem;
+    }
+    .error-404-img-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .error-404-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2rem, 4.5vw, 2.8rem);
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 0.75rem;
+    }
+
+    .error-404-desc {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.05rem;
+      color: #6b7280;
+      max-width: 560px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+
+    /* TAKE ME HOME BUTTON */
+    .btn-take-me-home {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      background: #008744;
+      color: #ffffff !important;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.95rem 2.6rem;
+      border-radius: 6px;
+      border: 2px solid #008744;
+      box-shadow: 0 4px 18px rgba(0,135,68,0.3);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn-take-me-home:hover {
+      background: #007038;
+      border-color: #007038;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0,135,68,0.45);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR (Screenshot Match) ===== -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="container nav-inner">
+      <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <div class="nav-dropdown">
+          <a href="index.html#about-oiib" class="nav-link">About Us <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu">
+            <a href="index.html#about-oiib">About OIIB</a>
+            <a href="index.html#values">Our Values</a>
+            <a href="index.html#team">Our Team</a>
+            <a href="index.html#faq">FAQ</a>
+          </div>
+        </div>
+        <a href="index.html#why" class="nav-link">Why Oromia</a>
+        <div class="nav-dropdown">
+          <a href="index.html#sectors" class="nav-link">Opportunities <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu">
+            <a href="our-services.html">Our Services</a>
+            <a href="index.html#sectors">Investment Sectors</a>
+            <a href="index.html#apply">Apply Online</a>
+            <a href="index.html#incentives">Incentives</a>
+            <a href="index.html#track">Track Application</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="index.html#news" class="nav-link">News &amp; Resources <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu">
+            <a href="index.html#news">News</a>
+            <a href="index.html#resources">Resources</a>
+          </div>
+        </div>
+        <a href="index.html#news" class="nav-link">Announcements</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- 3-Language Dropdown -->
+        <div class="lang-dropdown" id="lang-dropdown" role="navigation" aria-label="Language selector">
+          <button class="lang-dropdown-toggle" id="lang-toggle" aria-expanded="false" aria-haspopup="listbox">
+            <i class="fas fa-globe"></i>
+            <span id="lang-current">EN</span>
+            <i class="fas fa-chevron-down lang-chevron"></i>
+          </button>
+          <ul class="lang-dropdown-menu" id="lang-menu" role="listbox" aria-label="Select language">
+            <li role="option" aria-selected="true" data-lang="en" class="lang-option active">
+              <span class="lang-flag">EN</span> English
+            </li>
+            <li role="option" aria-selected="false" data-lang="am" class="lang-option">
+              <span class="lang-flag">አማ</span> አማርኛ
+            </li>
+            <li role="option" aria-selected="false" data-lang="om" class="lang-option">
+              <span class="lang-flag">OM</span> Afaan Oromoo
+            </li>
+          </ul>
+        </div>
+
+        <a href="index.html#contact" class="btn-contact-nav">CONTACT US</a>
+
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== 404 CONTENT (Matching Image 1 Exactly) ===== -->
+  <main class="error-404-container">
+    <div class="error-404-img-wrap">
+      <img src="images/404.png" alt="404 - Page Not Found" />
+    </div>
+    
+    <h1 class="error-404-title">Sorry We Can't Find That Page!</h1>
+    <p class="error-404-desc">The page you are looking for was moved, removed, renamed or never existed.</p>
+    
+    <!-- TAKE ME HOME BUTTON -->
+    <a href="index.html" class="btn-take-me-home" id="btn-take-me-home">
+      <i class="fas fa-arrow-left"></i> TAKE ME HOME
+    </a>
+  </main>
+
+  <!-- ===== AUTHENTIC FOOTER (Matching Image 2 Exactly) ===== -->
+  <footer class="authentic-footer" id="contact" role="contentinfo">
+    <div class="container">
+      <!-- Footer Top Banner -->
+      <div class="footer-top-banner">
+        <div class="footer-slogan-wrap">
+          <span class="footer-slogan-text">Invest. Grow. Sustain.</span>
+          <span class="footer-slogan-highlight">Oromia.</span>
+        </div>
+        <a href="index.html#contact" class="footer-btn-getintouch">GET IN TOUCH</a>
+      </div>
+
+      <!-- Footer Columns -->
+      <div class="footer-main-grid">
+        <!-- Col 1: Contact Details & Social Icons -->
+        <div class="footer-col-contact">
+          <div class="footer-contact-item">
+            <div class="fci-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="fci-text">Sarbet, Finfine, Oromia, Ethiopia</div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="fci-icon"><i class="fas fa-at"></i></div>
+            <div class="fci-text"><a href="mailto:contact@investinoromia.et">contact@investinoromia.et</a></div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="fci-icon"><i class="fas fa-phone"></i></div>
+            <div class="fci-text"><a href="tel:+251188325987">+251188325987</a></div>
+          </div>
+
+          <!-- Social Media Round Pills -->
+          <div class="footer-social-row">
+            <a href="https://x.com/investinoromia1" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://web.facebook.com/oromiainvestc/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/@OromiaInvestmentandIndustryBur" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://t.me/OromiaInvestmentandIndustryBurea" target="_blank" rel="noopener" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+            <a href="https://www.linkedin.com/in/oromia-investment-and-industry-bureau-42355a318/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2 & 3: Important Links -->
+        <div class="footer-col-links">
+          <h3 class="footer-links-title">Important Links</h3>
+          <div class="footer-links-two-cols">
+            <ul>
+              <li><a href="https://www.biio.gov.et" target="_blank" rel="noopener">Oromia Investment and Industry Bureau Service Delivery Reform Information System (SDRIS)</a></li>
+              <li><a href="https://esw.et/esw-trd/" target="_blank" rel="noopener">Ethiopian Electronics Single Windows</a></li>
+              <li><a href="https://investethiopia.gov.et/" target="_blank" rel="noopener">Ethiopian Investment Commission</a></li>
+              <li><a href="https://www.moi.gov.et" target="_blank" rel="noopener">Minister of Industry</a></li>
+              <li><a href="https://www.oipdc.org/" target="_blank" rel="noopener">Oromia industrial parks</a></li>
+            </ul>
+            <ul>
+              <li><a href="https://www.oromia.gov.et/" target="_blank" rel="noopener">Oromia President Office</a></li>
+              <li><a href="#">Oromia Land Bureau</a></li>
+              <li><a href="#">Oromia Agriculture Bureau</a></li>
+              <li><a href="#">Oromia Tourism Commission</a></li>
+              <li><a href="#">Ethio Lease</a></li>
+              <li><a href="https://www.gadasez.gov.et/" target="_blank" rel="noopener">Gada Special Economic Zone</a></li>
+              <li><a href="https://customs.erca.gov.et/trade/" target="_blank" rel="noopener">Ethiopian Customs Commission</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Col 4: Google Map Embed -->
+        <div class="footer-col-map">
+          <div class="footer-map-card">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.5377!2d38.7573!3d8.9806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sSarbet%2C%20Addis%20Ababa!5e0!3m2!1sen!2set!4v1698000000000"
+              width="100%" height="190" style="border:0; border-radius:12px;"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="OIIB Office Location — Sarbet, Finfine">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vertical Back To Top Label (Right Edge) -->
+    <button class="footer-vertical-backtotop" id="vertical-back-to-top" aria-label="Back to top">
+      BACK TO TOP
+    </button>
+  </footer>
+
+  <!-- ===== LIVE SUPPORT CHAT ===== -->
+  <div class="chat-fab" id="chat-fab" aria-label="Open live chat" role="button" tabindex="0">
+    <div class="chat-fab-icon"><i class="fas fa-comments"></i></div>
+    <div class="chat-fab-label">Live Support</div>
+    <div class="chat-badge" id="chat-badge">1</div>
+  </div>
+
+  <div class="chat-window" id="chat-window" aria-label="Live support chat" aria-hidden="true">
+    <div class="chat-header">
+      <div class="chat-agent-info">
+        <div class="chat-avatar"><i class="fas fa-user-tie"></i></div>
+        <div>
+          <strong>Investment Advisor</strong>
+          <span class="chat-status"><i class="fas fa-circle"></i> Online now</span>
+        </div>
+      </div>
+      <button id="chat-close" aria-label="Close chat"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="chat-messages" id="chat-messages" role="log" aria-live="polite">
+      <div class="chat-msg agent">
+        <div class="msg-bubble">👋 Need help finding information or services? How can I assist you today?</div>
+        <div class="msg-time">Now</div>
+      </div>
+    </div>
+    <div class="chat-input-row">
+      <input type="text" id="chat-input" placeholder="Type your message…" aria-label="Chat message" autocomplete="off" />
+      <button id="chat-send" aria-label="Send message"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

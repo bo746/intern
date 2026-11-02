@@ -12,7 +12,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet" />
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -28,58 +28,18 @@
     <button id="dismiss-offline" aria-label="Dismiss offline notice">✕</button>
   </div>
 
-  <!-- ===== TOP BAR ===== -->
-  <div class="top-bar">
-    <div class="container top-bar-inner">
-      <div class="top-bar-left">
-        <a href="tel:+251188325987"><i class="fas fa-phone"></i> +251 188 325 987</a>
-        <a href="mailto:contact@investinoromia.et"><i class="fas fa-envelope"></i> contact@investinoromia.et</a>
-      </div>
-      <div class="top-bar-right">
-        <!-- Language Switcher — addresses Weakness #6 -->
-        <div class="lang-switcher" id="lang-switcher" role="navigation" aria-label="Language selector">
-          <button class="lang-btn active" data-lang="en" id="lang-en" aria-pressed="true">EN</button>
-          <button class="lang-btn" data-lang="om" id="lang-om" aria-pressed="false">OM</button>
-          <button class="lang-btn" data-lang="am" id="lang-am" aria-pressed="false">አማ</button>
-          <button class="lang-btn" data-lang="fr" id="lang-fr" aria-pressed="false">FR</button>
-          <button class="lang-btn" data-lang="zh" id="lang-zh" aria-pressed="false">中文</button>
-          <button class="lang-btn" data-lang="ar" id="lang-ar" aria-pressed="false">ع</button>
-        </div>
-        <div class="social-links">
-          <a href="https://x.com/investinoromia1" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-          <a href="https://web.facebook.com/oromiainvestc/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.youtube.com/@OromiaInvestmentandIndustryBur" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-          <a href="https://t.me/OromiaInvestmentandIndustryBurea" target="_blank" rel="noopener" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
-          <a href="https://www.linkedin.com/in/oromia-investment-and-industry-bureau-42355a318/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- ===== NAVBAR ===== -->
+
   <header class="navbar" id="navbar" role="banner">
     <div class="container nav-inner">
-      <a href="#home" class="logo" aria-label="OIIB Home">
-        <div class="logo-icon"><i class="fas fa-seedling"></i></div>
-        <div class="logo-text">
-          <span class="logo-main" data-i18n="logo_main">InvestOromia</span>
-          <span class="logo-sub" data-i18n="logo_sub">Oromia Investment &amp; Industry Bureau</span>
-        </div>
-      </a>
-
-      <!-- Search Bar — addresses Weakness #1 -->
-      <div class="nav-search" role="search">
-        <input type="search" id="global-search" placeholder="Search sectors, services, news…" aria-label="Search the site" autocomplete="off" />
-        <button id="search-btn" aria-label="Submit search"><i class="fas fa-search"></i></button>
-        <div id="search-dropdown" class="search-dropdown" role="listbox" aria-label="Search suggestions"></div>
-      </div>
+      
 
       <nav class="nav-links" id="nav-links" aria-label="Main navigation">
         <a href="#home" class="nav-link active" data-i18n="nav_home">Home</a>
         <div class="nav-dropdown">
-          <a href="#about" class="nav-link" data-i18n="nav_about">About <i class="fas fa-chevron-down"></i></a>
+          <a href="#about-oiib" class="nav-link" data-i18n="nav_about">About Us <i class="fas fa-chevron-down"></i></a>
           <div class="dropdown-menu">
-            <a href="#about" data-i18n="dd_about">About OIIB</a>
+            <a href="#about-oiib" data-i18n="dd_about">About OIIB</a>
             <a href="#values" data-i18n="dd_values">Our Values</a>
             <a href="#team" data-i18n="dd_team">Our Team</a>
             <a href="#faq" data-i18n="dd_faq">FAQ</a>
@@ -89,136 +49,184 @@
         <div class="nav-dropdown">
           <a href="#sectors" class="nav-link" data-i18n="nav_opps">Opportunities <i class="fas fa-chevron-down"></i></a>
           <div class="dropdown-menu">
+            <a href="our-services.html">Our Services</a>
             <a href="#sectors" data-i18n="dd_inv">Investment Sectors</a>
             <a href="#apply" data-i18n="dd_apply">Apply Online</a>
             <a href="#incentives" data-i18n="dd_inc">Incentives</a>
+            <a href="#track" data-i18n="qa4_title">Track Application</a>
           </div>
         </div>
-        <a href="#news" class="nav-link" data-i18n="nav_news">News &amp; Updates</a>
-        <a href="#resources" class="nav-link" data-i18n="nav_res">Resources</a>
-        <a href="#contact" class="nav-link cta-nav" data-i18n="nav_contact">Contact Us</a>
+        <div class="nav-dropdown">
+          <a href="#news" class="nav-link" data-i18n="nav_news">News &amp; Resources <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-menu">
+            <a href="#news" data-i18n="nav_news">News</a>
+            <a href="#resources" data-i18n="nav_res">Resources</a>
+          </div>
+        </div>
+        <a href="#news" class="nav-link" data-i18n="nav_announcements">Announcements</a>
       </nav>
 
-      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-actions">
+        <!-- Search Trigger Icon -->
+        <button class="nav-search-btn" id="search-toggle-btn" aria-label="Toggle search">
+          <i class="fas fa-search"></i>
+        </button>
+
+        <!-- Search Bar Overlay/Popup -->
+        <div class="nav-search-box" id="nav-search-box">
+          <input type="search" id="global-search" placeholder="Search sectors, services, news…" aria-label="Search the site" autocomplete="off" />
+          <button id="search-btn" aria-label="Submit search"><i class="fas fa-search"></i></button>
+          <div id="search-dropdown" class="search-dropdown" role="listbox" aria-label="Search suggestions"></div>
+        </div>
+
+        <!-- 3-Language Dropdown -->
+        <div class="lang-dropdown" id="lang-dropdown" role="navigation" aria-label="Language selector">
+          <button class="lang-dropdown-toggle" id="lang-toggle" aria-expanded="false" aria-haspopup="listbox">
+            <i class="fas fa-globe"></i>
+            <span id="lang-current">EN</span>
+            <i class="fas fa-chevron-down lang-chevron"></i>
+          </button>
+          <ul class="lang-dropdown-menu" id="lang-menu" role="listbox" aria-label="Select language">
+            <li role="option" aria-selected="true" data-lang="en" class="lang-option active">
+              <span class="lang-flag">EN</span> English
+            </li>
+            <li role="option" aria-selected="false" data-lang="am" class="lang-option">
+              <span class="lang-flag">አማ</span> አማርኛ
+            </li>
+            <li role="option" aria-selected="false" data-lang="om" class="lang-option">
+              <span class="lang-flag">OM</span> Afaan Oromoo
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Us CTA button matching screenshot -->
+        <a href="#contact" class="btn-contact-nav" data-i18n="nav_contact">CONTACT US</a>
+
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="home" aria-label="Hero section">
-    <div class="hero-bg-overlay"></div>
-    <div class="hero-particles" id="hero-particles"></div>
-    <div class="container hero-content">
-      <div class="hero-badge" data-i18n="hero_badge"><i class="fas fa-award"></i> Ethiopia's Premier Investment Destination</div>
-      <h1 class="hero-title" data-i18n="hero_title">Invest in <span class="gradient-text">Oromia</span> —<br>Where Opportunity Grows</h1>
-      <p class="hero-subtitle" data-i18n="hero_subtitle">One-stop services · Transparent governance · World-class opportunities in Manufacturing, Agriculture, Tourism, ICT &amp; Mining</p>
-      <div class="hero-cta">
-        <a href="#apply" class="btn btn-primary" id="hero-apply-btn" data-i18n="hero_cta1"><i class="fas fa-rocket"></i> Start Your Investment</a>
-        <a href="#sectors" class="btn btn-outline" data-i18n="hero_cta2">Explore Sectors</a>
-      </div>
-
-      <!-- Live Stats — addresses Weakness #3 (real-time data display) -->
-      <div class="hero-stats" role="region" aria-label="Investment statistics">
-        <div class="stat-item">
-          <span class="stat-number" data-target="1495">0</span>
-          <span class="stat-label" data-i18n="stat1">New Investors (2025)</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-number" data-target="65" data-suffix="B+">0</span>
-          <span class="stat-label" data-i18n="stat2">Birr Capital Invested</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-number" data-target="168255">0</span>
-          <span class="stat-label" data-i18n="stat3">Jobs Created</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-number" data-target="5">0</span>
-          <span class="stat-label" data-i18n="stat4">Key Sectors</span>
+  <!-- ===== HERO SLIDER (Exact Screenshot Match) ===== -->
+  <section class="hero-slider-section" id="home" aria-label="Hero slider">
+    <!-- Slider Slides -->
+    <div class="hero-slides" id="hero-slides">
+      <!-- Slide 1 (Matching screenshot exactly) -->
+      <div class="hero-slide active" style="background-image: url('images/hero-slide1.png');">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content-slider">
+          <span class="hero-category-tag">INVEST IN OROMIA</span>
+          <h1 class="hero-headline-serif">Your Gateway to Opportunity</h1>
+          <p class="hero-subline">Discover fertile land, skilled labor, and supportive investment policies.</p>
+          <div class="hero-btn-row">
+            <a href="#about-oiib" class="hero-btn-green">LEARN MORE</a>
+            <a href="#contact" class="hero-btn-trans">GET IN TOUCH</a>
+          </div>
         </div>
       </div>
 
-      <!-- Last updated timestamp — addresses Weakness #3 -->
-      <div class="data-freshness">
-        <i class="fas fa-circle-check"></i>
-        <span data-i18n="data_fresh">Data last verified: October 2025</span>
+      <!-- Slide 2 -->
+      <div class="hero-slide" style="background-image: url('images/hero-slide2.png');">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content-slider">
+          <span class="hero-category-tag">INVEST IN OROMIA</span>
+          <h1 class="hero-headline-serif">Unlock Oromia’s Economic Power</h1>
+          <p class="hero-subline">With strong infrastructure, a young workforce, and sectoral diversity, Oromia is Ethiopia’s economic engine.</p>
+          
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="hero-slide" style="background-image: url('images/hero-slide3.png');">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content-slider">
+          <span class="hero-category-tag">INVEST IN OROMIA</span>
+          <h1 class="hero-headline-serif">Gateway to Sustainable Growth</h1>
+          <p class="hero-subline">From agriculture to ICT, explore sectors that drive inclusive and sustainable development across regions.</p>
+          
+        </div>
       </div>
     </div>
 
-    <a href="#about" class="scroll-down" aria-label="Scroll to About section">
-      <i class="fas fa-chevron-down"></i>
-    </a>
+    <!-- Slider Navigation Arrows -->
+    <button class="hero-arrow hero-prev" id="hero-prev-btn" aria-label="Previous slide">&#10094;</button>
+    <button class="hero-arrow hero-next" id="hero-next-btn" aria-label="Next slide">&#10095;</button>
+
+    
   </section>
 
-  <!-- ===== LIVE SYSTEM STATUS (Weakness #5) ===== -->
-  <div class="status-ribbon" role="status" aria-live="polite" id="status-ribbon">
-    <div class="container status-inner">
-      <div class="status-item status-ok">
-        <span class="status-dot"></span>
-        <span data-i18n="status_portal">Investor Portal: Online</span>
-      </div>
-      <div class="status-item status-ok">
-        <span class="status-dot"></span>
-        <span data-i18n="status_app">Application System: Operational</span>
-      </div>
-      <div class="status-item status-ok">
-        <span class="status-dot"></span>
-        <span data-i18n="status_sup">Support Chat: Available</span>
-      </div>
-      <div class="status-item">
-        <i class="fas fa-clock"></i>
-        <span id="live-clock"></span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ===== QUICK ACCESS (Weakness #1) ===== -->
-  <section class="quick-access section-pad" aria-label="Quick access links">
+  <!-- ===== FEATURE DRIVERS (Exact Match to Screenshot) ===== -->
+  <section class="feature-drivers-section" id="drivers" aria-label="Key Investment Drivers">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag" data-i18n="qa_tag">Quick Access</span>
-        <h2 data-i18n="qa_title">What Would You Like to Do?</h2>
-        <p data-i18n="qa_sub">Jump straight to what you need — no complex navigation required</p>
-      </div>
-      <div class="qa-grid">
-        <a href="#apply" class="qa-card" id="qa-register" aria-label="Register as Investor">
-          <div class="qa-icon"><i class="fas fa-user-plus"></i></div>
-          <h3 data-i18n="qa1_title">Register as Investor</h3>
-          <p data-i18n="qa1_desc">Start your investment application online in minutes</p>
-          <span class="qa-arrow"><i class="fas fa-arrow-right"></i></span>
+      <div class="feature-drivers-grid">
+        <!-- Card 1: Drive -->
+        <a href="our-services.html#drive" class="feature-driver-card">
+          <div class="fd-icon">
+            <img src="images/ic-card-drive.png" alt="Drive" />
+          </div>
+          <div class="fd-content">
+            <h3 class="fd-title">Drive</h3>
+            <p class="fd-desc">Commitment to development and sustainable economic growth</p>
+          </div>
+          <div class="fd-arrow">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="7" x2="17" y2="17"></line>
+              <polyline points="17 7 17 17 7 17"></polyline>
+            </svg>
+          </div>
         </a>
-        <a href="#incentives" class="qa-card" id="qa-incentives" aria-label="View Incentives">
-          <div class="qa-icon"><i class="fas fa-gift"></i></div>
-          <h3 data-i18n="qa2_title">View Incentives</h3>
-          <p data-i18n="qa2_desc">Tax holidays, land access, and financing benefits</p>
-          <span class="qa-arrow"><i class="fas fa-arrow-right"></i></span>
+
+        <!-- Card 2: Natural Resources -->
+        <a href="our-services.html#natural-resources" class="feature-driver-card">
+          <div class="fd-icon">
+            <img src="images/ic-card-natural.png" alt="Natural Resources" />
+          </div>
+          <div class="fd-content">
+            <h3 class="fd-title">Natural Resources</h3>
+            <p class="fd-desc">Abandonment natural resources, raw materials and competitive factor input price</p>
+          </div>
+          <div class="fd-arrow">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="7" x2="17" y2="17"></line>
+              <polyline points="17 7 17 17 7 17"></polyline>
+            </svg>
+          </div>
         </a>
-        <a href="#sectors" class="qa-card" id="qa-sectors" aria-label="Explore Sectors">
-          <div class="qa-icon"><i class="fas fa-industry"></i></div>
-          <h3 data-i18n="qa3_title">Explore Sectors</h3>
-          <p data-i18n="qa3_desc">Agriculture, Manufacturing, Mining, ICT, Tourism</p>
-          <span class="qa-arrow"><i class="fas fa-arrow-right"></i></span>
+
+        <!-- Card 3: Manpower -->
+        <a href="our-services.html#manpower" class="feature-driver-card">
+          <div class="fd-icon">
+            <img src="images/ic-card-manpower.png" alt="Manpower" />
+          </div>
+          <div class="fd-content">
+            <h3 class="fd-title">Manpower</h3>
+            <p class="fd-desc">Highly educated and skilled available manpower</p>
+          </div>
+          <div class="fd-arrow">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="7" x2="17" y2="17"></line>
+              <polyline points="17 7 17 17 7 17"></polyline>
+            </svg>
+          </div>
         </a>
-        <a href="#track" class="qa-card" id="qa-track" aria-label="Track Application">
-          <div class="qa-icon"><i class="fas fa-magnifying-glass-chart"></i></div>
-          <h3 data-i18n="qa4_title">Track Application</h3>
-          <p data-i18n="qa4_desc">Check the live status of your pending application</p>
-          <span class="qa-arrow"><i class="fas fa-arrow-right"></i></span>
-        </a>
-        <a href="#chat" class="qa-card" id="qa-chat" aria-label="Live Chat Support">
-          <div class="qa-icon"><i class="fas fa-comments"></i></div>
-          <h3 data-i18n="qa5_title">Live Chat Support</h3>
-          <p data-i18n="qa5_desc">Instant answers from our investment advisors</p>
-          <span class="qa-arrow"><i class="fas fa-arrow-right"></i></span>
-        </a>
-        <a href="#resources" class="qa-card" id="qa-resources" aria-label="Download Resources">
-          <div class="qa-icon"><i class="fas fa-file-arrow-down"></i></div>
-          <h3 data-i18n="qa6_title">Download Resources</h3>
-          <p data-i18n="qa6_desc">Forms, policies, and investment guides offline</p>
-          <span class="qa-arrow"><i class="fas fa-arrow-right"></i></span>
+
+        <!-- Card 4: Regulation -->
+        <a href="our-services.html#regulation" class="feature-driver-card">
+          <div class="fd-icon">
+            <img src="images/ic-card-regulation.png" alt="Regulation" />
+          </div>
+          <div class="fd-content">
+            <h3 class="fd-title">Regulation</h3>
+            <p class="fd-desc">Highly investor centered regulation and incentives</p>
+          </div>
+          <div class="fd-arrow">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="7" x2="17" y2="17"></line>
+              <polyline points="17 7 17 17 7 17"></polyline>
+            </svg>
+          </div>
         </a>
       </div>
     </div>
@@ -227,41 +235,93 @@
   <!-- ===== WHY OROMIA ===== -->
   <section class="why-oromia section-pad" id="why" aria-label="Why Oromia">
     <div class="container">
-      <div class="section-header light">
-        <span class="section-tag" data-i18n="why_tag">Why Oromia</span>
-        <h2 data-i18n="why_title">Ethiopia's Land of Opportunity</h2>
-        <p data-i18n="why_sub">Oromia has become a top investment destination due to its vast natural resources, fertile land, young workforce, and investor-friendly policies</p>
+      <div class="why-oromia-layout">
+        <!-- Left: Industrial Park / Campus Image -->
+        <div class="why-left-col">
+          <div class="why-image-wrapper">
+            <img src="images/why-oromia-campus.png" alt="Oromia Industrial Park and Investment Campus" class="why-campus-img" />
+          </div>
+        </div>
+
+        <!-- Right: Exact Text & Checkmarks from original investinoromia.et -->
+        <div class="why-right-col">
+          <span class="why-category-tag">WHY OROMIA? _</span>
+          <h2 class="why-display-heading">Why you choose Oromia as your investment destnation?</h2>
+          <p class="why-lead-text">
+            Oromia has become a top investment destination due to its vast natural resources, fertile land, young workforce, strategic location near Addis Ababa, and investor-friendly policies, offering unmatched opportunities in agriculture, manufacturing, mining, energy, and tourism sectors with strong government support.
+          </p>
+
+          <div class="why-checklist">
+            <div class="why-check-row">
+              <div class="why-check-badge active">
+                <i class="fas fa-check"></i>
+              </div>
+              <p class="why-check-text">
+                Access to major transport corridors, including the Addis-Djibouti railway, enhances logistics and international market connectivity.
+              </p>
+            </div>
+
+            <div class="why-check-row">
+              <div class="why-check-badge">
+                <i class="fas fa-check"></i>
+              </div>
+              <p class="why-check-text">
+                Competitive incentives like tax holidays, land access, and streamlined licensing make investment easy and cost-effective.
+              </p>
+            </div>
+
+            <div class="why-check-row">
+              <div class="why-check-badge">
+                <i class="fas fa-check"></i>
+              </div>
+              <p class="why-check-text">
+                Diverse agro-ecological zones support year-round agricultural production, ideal for agribusiness and agro-processing industries and industrial Parks.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="why-grid">
-        <div class="why-card">
-          <div class="why-icon"><i class="fas fa-mountain-sun"></i></div>
-          <h3 data-i18n="why1_t">Natural Resources</h3>
-          <p data-i18n="why1_d">Abundant raw materials, fertile land, minerals, and competitive factor input prices</p>
+    </div>
+  </section>
+
+  <!-- ===== MESSAGE FROM HEAD OF BUREAU (Matching investinoromia.et) ===== -->
+  <section class="head-message-section" id="message-head" aria-label="Message from Head of Bureau">
+    <div class="container">
+      <div class="head-message-layout">
+        <!-- Left: Portrait Photo of Head of Bureau -->
+        <div class="head-message-image-col">
+          <div class="head-photo-wrapper bounce-animate">
+            <img src="images/leadership.jpg" alt="Mr. Ahmed Idris - Head of Oromia Investment and Industry Bureau" class="head-photo" />
+            
+            <!-- Bottom Overlay Strip (Matching investinoromia.et) -->
+            <div class="head-photo-badge-bar">
+              <div class="badge-logo-wrap">
+                <img src="images/oiib-badge-logo.png" alt="Biiroo Invastimantii fi Industirii Oromiyaa" class="badge-logo-img" />
+              </div>
+              <div class="badge-text-wrap">
+                <div class="badge-name">KAB. OBBO AHMAD IDIRIIS</div>
+                <div class="badge-sub">HOOGGANAA BIIO(BARA 2015 HANGA AMMAA)</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="why-card">
-          <div class="why-icon"><i class="fas fa-people-group"></i></div>
-          <h3 data-i18n="why2_t">Young Workforce</h3>
-          <p data-i18n="why2_d">Highly educated, skilled, and motivated workforce ready for modern industries</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon"><i class="fas fa-train"></i></div>
-          <h3 data-i18n="why3_t">Strategic Location</h3>
-          <p data-i18n="why3_d">Access to Addis-Djibouti railway, major transport corridors, and international markets</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon"><i class="fas fa-scale-balanced"></i></div>
-          <h3 data-i18n="why4_t">Investor Policies</h3>
-          <p data-i18n="why4_d">Tax holidays, land access, and streamlined licensing — business made easy</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon"><i class="fas fa-leaf"></i></div>
-          <h3 data-i18n="why5_t">Agro-Ecological Zones</h3>
-          <p data-i18n="why5_d">Diverse climates support year-round production for agribusiness and agro-processing</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon"><i class="fas fa-handshake"></i></div>
-          <h3 data-i18n="why6_t">One-Stop Services</h3>
-          <p data-i18n="why6_d">All investment services under one roof — transparent, efficient, investor-centered</p>
+
+        <!-- Right: Message Content -->
+        <div class="head-message-content-col">
+          <span class="head-section-tag">MESSAGE FROM HEAD OF OROMIA INVESTMENT AND INDUSTRY BUREAU _</span>
+          <h2 class="head-main-title">Welcome to the Oromia Investment and Industry Bureau</h2>
+          
+          <div class="head-body-text">
+            <p>Welcome to the official website of the Oromia Investment and Industry Bureau. Oromia is a region of opportunity — rich in resources, talent, and potential.</p>
+            <p>Our Bureau is committed to promoting investment, supporting industries, and building a strong, sustainable economy. Through this platform, we provide information, guidance, and services to help investors and partners succeed.</p>
+            <p>We invite you to explore the investment opportunities that make Oromia a leading destination for growth and innovation.</p>
+            <p class="head-closing-phrase">Together, let's build a prosperous Oromia,Ethiopia.</p>
+          </div>
+
+          <div class="head-signoff">
+            <h4 class="head-author-name">Mr.Ahmed Idris</h4>
+            <p class="head-author-role">Head of Oromia Investment and Industry Bureau</p>
+          </div>
         </div>
       </div>
     </div>
@@ -273,7 +333,7 @@
       <div class="section-header">
         <span class="section-tag" data-i18n="sec_tag">Key Investment Areas</span>
         <h2 data-i18n="sec_title">Explore Thriving Sectors</h2>
-        <p data-i18n="sec_sub">Five sectors representing $130 billion in export goods and services — find your opportunity</p>
+        <p data-i18n="sec_sub">The five sectors are selected on the basis of their potential to meet global demand through local production and export value. Together, these five sectors represent $130 billion in goods and service exports.</p>
       </div>
 
       <!-- Sector Tab Navigation — Weakness #1 fix -->
@@ -298,8 +358,8 @@
       <div class="sector-panels">
         <!-- Agriculture -->
         <div class="sector-panel active" role="tabpanel" id="tab-agri" aria-labelledby="btn-agri">
-          <div class="sector-img" style="background: linear-gradient(135deg, #064e3b 0%, #1a4731 100%); min-height:320px; display:flex; align-items:center; justify-content:center;">
-            <img src="C:/Users/hp/.gemini/antigravity/brain/5adbecd0-081c-4e66-b337-4571c0ef14cb/oromia_agriculture_1793451699096.png" alt="Coffee harvest in Oromia Ethiopia" loading="lazy" onerror="this.style.display='none'" />
+          <div class="sector-img">
+            <img src="images/sector-agri.png" alt="Coffee and agriculture production in Oromia, Ethiopia" loading="lazy" />
             <div class="sector-img-badge"><i class="fas fa-seedling"></i> Agriculture &amp; Agro-Processing</div>
           </div>
           <div class="sector-info">
@@ -320,9 +380,9 @@
 
         <!-- Manufacturing -->
         <div class="sector-panel" role="tabpanel" id="tab-mfg" aria-labelledby="btn-mfg">
-          <div class="sector-img" style="background: linear-gradient(135deg, #1a2233 0%, #2a3a56 100%); min-height:320px; display:flex; align-items:center; justify-content:center;">
-            <img src="C:/Users/hp/.gemini/antigravity/brain/5adbecd0-081c-4e66-b337-4571c0ef14cb/oromia_manufacturing_1793451793726.png" alt="Manufacturing in Oromia" loading="lazy" onerror="this.style.display='none'" />
-            <div class="sector-img-badge"><i class="fas fa-industry"></i> Manufacturing</div>
+          <div class="sector-img">
+            <img src="images/sector-mfg.png" alt="Modern industrial manufacturing plant in Oromia" loading="lazy" />
+            <div class="sector-img-badge"><i class="fas fa-industry"></i> Manufacturing &amp; Industrial Parks</div>
           </div>
           <div class="sector-info">
             <h3 data-i18n="mfg_t">Manufacturing in Oromia</h3>
@@ -342,8 +402,8 @@
 
         <!-- Tourism -->
         <div class="sector-panel" role="tabpanel" id="tab-tour" aria-labelledby="btn-tour">
-          <div class="sector-img" style="background: linear-gradient(135deg, #1a4731 0%, #2d7d52 100%); display:flex; align-items:center; justify-content:center; font-size:7rem; color:rgba(255,255,255,0.3);">
-            <i class="fas fa-mountain"></i>
+          <div class="sector-img">
+            <img src="images/sector-tour.png" alt="Scenic mountains and natural landscape in Oromia" loading="lazy" />
             <div class="sector-img-badge"><i class="fas fa-mountain"></i> Tourism &amp; Eco-Tourism</div>
           </div>
           <div class="sector-info">
@@ -364,8 +424,8 @@
 
         <!-- ICT -->
         <div class="sector-panel" role="tabpanel" id="tab-ict" aria-labelledby="btn-ict">
-          <div class="sector-img" style="background: linear-gradient(135deg, #0f2044 0%, #1a4080 100%); display:flex; align-items:center; justify-content:center; font-size:7rem; color:rgba(255,255,255,0.2);">
-            <i class="fas fa-microchip"></i>
+          <div class="sector-img">
+            <img src="images/sector-ict.png" alt="Modern ICT digital workspace and innovation hub" loading="lazy" />
             <div class="sector-img-badge"><i class="fas fa-microchip"></i> ICT &amp; Innovation</div>
           </div>
           <div class="sector-info">
@@ -386,8 +446,8 @@
 
         <!-- Mining -->
         <div class="sector-panel" role="tabpanel" id="tab-mine" aria-labelledby="btn-mine">
-          <div class="sector-img" style="background: linear-gradient(135deg, #3a1a00 0%, #8b4513 100%); display:flex; align-items:center; justify-content:center; font-size:7rem; color:rgba(255,255,255,0.2);">
-            <i class="fas fa-gem"></i>
+          <div class="sector-img">
+            <img src="images/sector-mine.png" alt="Gold and mineral extraction in Oromia" loading="lazy" />
             <div class="sector-img-badge"><i class="fas fa-gem"></i> Mining &amp; Minerals</div>
           </div>
           <div class="sector-info">
@@ -601,7 +661,7 @@
   </section>
 
   <!-- ===== LIVE SUPPORT CHAT (Weakness #4) ===== -->
-  <div class="chat-fab" id="chat-fab" aria-label="Open live chat" role="button" tabindex="0" id="chat">
+  <div class="chat-fab" id="chat-fab" aria-label="Open live chat" role="button" tabindex="0">
     <div class="chat-fab-icon"><i class="fas fa-comments"></i></div>
     <div class="chat-fab-label" data-i18n="chat_label">Live Support</div>
     <div class="chat-badge" id="chat-badge">1</div>
@@ -730,8 +790,8 @@
       </div>
       <div class="news-grid">
         <article class="news-card featured">
-          <div class="news-img-placeholder" style="background: linear-gradient(135deg, #1a4731, #2ecc71);">
-            <i class="fas fa-chart-line"></i>
+          <div class="news-img-placeholder">
+            <img src="images/news-featured-investors.jpg" alt="1,495 New Investors registered with Oromia Investment Bureau" style="width:100%; height:100%; object-fit:cover;" />
           </div>
           <div class="news-body">
             <span class="news-tag" data-i18n="news_tag_label">News</span>
@@ -742,8 +802,8 @@
           </div>
         </article>
         <article class="news-card">
-          <div class="news-img-placeholder" style="background: linear-gradient(135deg, #1a2a4a, #3a6bc4);">
-            <i class="fas fa-handshake"></i>
+          <div class="news-img-placeholder">
+            <img src="images/news-land.jpg" alt="Land development and infrastructure" style="width:100%; height:100%; object-fit:cover;" />
           </div>
           <div class="news-body">
             <span class="news-tag" data-i18n="news_tag_label">News</span>
@@ -754,8 +814,8 @@
           </div>
         </article>
         <article class="news-card">
-          <div class="news-img-placeholder" style="background: linear-gradient(135deg, #2a1a3a, #7a3a9a);">
-            <i class="fas fa-university"></i>
+          <div class="news-img-placeholder">
+            <img src="images/news-banks.jpg" alt="Finance and banking partnership" style="width:100%; height:100%; object-fit:cover;" />
           </div>
           <div class="news-body">
             <span class="news-tag" data-i18n="news_tag_label">News</span>
@@ -775,9 +835,26 @@
       <div class="section-header light">
         <span class="section-tag" data-i18n="val_tag">Our Foundation</span>
         <h2 data-i18n="val_title">Our Core Values &amp; Principles</h2>
-        <p data-i18n="val_sub">We ensure transparent, investor-focused services that are inclusive, sustainable, and innovative</p>
+        <p data-i18n="val_sub">We ensure transparent, investor-focused services that are inclusive, sustainable, and innovative — driven by partnerships and accountability to foster a thriving, equitable, and competitive investment environment in Oromia.</p>
       </div>
-      <div class="values-grid">
+      <div class="values-pillars-grid">
+        <div class="value-pillar-card">
+          <div class="vp-icon"><img src="images/ic-innovation.png" alt="Innovation" /></div>
+          <h3>Innovation</h3>
+          <p>Oromia fosters cutting-edge technology hubs, research centers, and digital infrastructure to drive inclusive economic transformation.</p>
+        </div>
+        <div class="value-pillar-card">
+          <div class="vp-icon"><img src="images/ic-finance.png" alt="Finance" /></div>
+          <h3>Finance</h3>
+          <p>The region promotes vibrant financial services, fintech growth, and investor-friendly policies for sustainable capital flow.</p>
+        </div>
+        <div class="value-pillar-card">
+          <div class="vp-icon"><img src="images/ic-logistics.png" alt="Logistics" /></div>
+          <h3>Logistics</h3>
+          <p>Strategically located, Oromia offers efficient transport networks, dry ports, and seamless regional connectivity for global trade.</p>
+        </div>
+      </div>
+      <div class="values-grid" style="margin-top:2rem;">
         <div class="value-card"><i class="fas fa-eye"></i><h4 data-i18n="v1">Transparency &amp; Accountability</h4></div>
         <div class="value-card"><i class="fas fa-star"></i><h4 data-i18n="v2">Investor-Centered Service</h4></div>
         <div class="value-card"><i class="fas fa-leaf"></i><h4 data-i18n="v3">Sustainability</h4></div>
@@ -918,10 +995,11 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-content">
-          <span class="section-tag">About OIIB</span>
-          <h2>Oromia Investment &amp; Industry Bureau</h2>
-          <p class="about-lead">The Oromia Investment and Industry Bureau (OIIB) is the official government body responsible for promoting and facilitating investment in the Oromia Regional State of Ethiopia. We lead investment and industrial development with a commitment to transparency, efficiency, and investor success.</p>
-          <p>Our Bureau operates a comprehensive one-stop service, enabling investors to complete all registration, licensing, and approval processes in a single location — saving time and reducing bureaucratic complexity.</p>
+          <span class="section-tag">Welcome to OIIB</span>
+          <h2>Message from Head of Oromia Investment &amp; Industry Bureau</h2>
+          <p class="about-lead">"Welcome to the official website of the Oromia Investment and Industry Bureau. Oromia is a region of opportunity — rich in resources, talent, and potential."</p>
+          <p>Our Bureau is committed to promoting investment, supporting industries, and building a strong, sustainable economy. Through this platform, we provide information, guidance, and services to help investors and partners succeed.</p>
+          <p>We invite you to explore the investment opportunities that make Oromia a leading destination for growth and innovation.</p>
           <div class="about-quote">
             <blockquote>
               "Together, let's build a prosperous Oromia, Ethiopia."
@@ -929,27 +1007,27 @@
             <cite>— Mr. Ahmed Idris, Head of Oromia Investment &amp; Industry Bureau</cite>
           </div>
           <div class="about-highlights">
-            <div class="ah-item"><i class="fas fa-building-columns"></i><span>Government-backed official body</span></div>
-            <div class="ah-item"><i class="fas fa-handshake"></i><span>One-stop investment services</span></div>
-            <div class="ah-item"><i class="fas fa-chart-line"></i><span>130+ Billion USD market potential</span></div>
-            <div class="ah-item"></div>
+            <div class="ah-item"><i class="fas fa-building-columns"></i><span>Official Regional Bureau</span></div>
+            <div class="ah-item"><i class="fas fa-handshake"></i><span>One-Stop Service Delivery</span></div>
+            <div class="ah-item"><i class="fas fa-chart-line"></i><span>$130 Billion Export Potential</span></div>
+            <div class="ah-item"><i class="fas fa-shield-halved"></i><span>Transparent Governance</span></div>
           </div>
         </div>
         <div class="about-visual">
-          <div class="about-stat-card">
+          <div class="about-leader-card">
+            <div class="leader-photo-wrap">
+              <img src="images/leadership.jpg" alt="Mr. Ahmed Idris, Head of Oromia Investment & Industry Bureau" />
+            </div>
+            <div class="leader-caption">
+              <strong>Mr. Ahmed Idris</strong>
+              <span>Head of Oromia Investment &amp; Industry Bureau</span>
+            </div>
+          </div>
+          <div class="about-stat-card" style="margin-top:1.5rem;">
             <div class="asc-item"><span class="asc-num">1,495</span><span class="asc-label">New Investors (2025)</span></div>
             <div class="asc-item"><span class="asc-num">65.41B</span><span class="asc-label">Birr Capital Invested</span></div>
-            <div class="asc-item"><span class="asc-num">168,255</span><span class="asc-label">Jobs to be Created</span></div>
+            <div class="asc-item"><span class="asc-num">168,255</span><span class="asc-label">Jobs Created</span></div>
             <div class="asc-item"><span class="asc-num">10,539</span><span class="asc-label">Hectares Allocated</span></div>
-            <div class="asc-item"><span class="asc-num">3,163</span><span class="asc-label">Land Approvals Granted</span></div>
-            <div class="asc-item"><span class="asc-num">90.16B</span><span class="asc-label">Birr Board Approvals</span></div>
-          </div>
-          <div class="about-bureau-msg">
-            <div class="bureau-avatar"><i class="fas fa-user-tie"></i></div>
-            <div>
-              <strong>Mr. Ahmed Idris</strong>
-              <span>Head of OIIB</span>
-            </div>
           </div>
         </div>
       </div>
@@ -966,7 +1044,7 @@
       </div>
       <div class="team-grid">
         <div class="team-card">
-          <div class="team-avatar" style="background: linear-gradient(135deg,#064e3b,#10b981);"><i class="fas fa-user-tie"></i></div>
+          <div class="team-avatar" style="overflow:hidden;"><img src="images/leadership.jpg" alt="Mr. Ahmed Idris" style="width:100%;height:100%;object-fit:cover;" /></div>
           <div class="team-info">
             <h3>Mr. Ahmed Idris</h3>
             <span class="team-role">Head of Bureau</span>
@@ -1020,62 +1098,86 @@
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer" id="about" role="contentinfo">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <div class="logo">
-          <div class="logo-icon"><i class="fas fa-seedling"></i></div>
-          <div class="logo-text">
-            <span class="logo-main">InvestOromia</span>
-            <span class="logo-sub">Oromia Investment &amp; Industry Bureau</span>
+  <!-- ===== AUTHENTIC FOOTER (Matching Image 2 Exactly) ===== -->
+  <footer class="authentic-footer" id="contact" role="contentinfo">
+    <div class="container">
+      <!-- Footer Top Banner -->
+      <div class="footer-top-banner">
+        <div class="footer-slogan-wrap">
+          <span class="footer-slogan-text">Invest. Grow. Sustain.</span>
+          <span class="footer-slogan-highlight">Oromia.</span>
+        </div>
+        <a href="#contact" class="footer-btn-getintouch">GET IN TOUCH</a>
+      </div>
+
+      <!-- Footer Columns -->
+      <div class="footer-main-grid">
+        <!-- Col 1: Contact Details & Social Icons -->
+        <div class="footer-col-contact">
+          <div class="footer-contact-item">
+            <div class="fci-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="fci-text">Sarbet, Finfine, Oromia, Ethiopia</div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="fci-icon"><i class="fas fa-at"></i></div>
+            <div class="fci-text"><a href="mailto:contact@investinoromia.et">contact@investinoromia.et</a></div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="fci-icon"><i class="fas fa-phone"></i></div>
+            <div class="fci-text"><a href="tel:+251188325987">+251188325987</a></div>
+          </div>
+
+          <!-- Social Media Round Pills -->
+          <div class="footer-social-row">
+            <a href="https://x.com/investinoromia1" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://web.facebook.com/oromiainvestc/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/@OromiaInvestmentandIndustryBur" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://t.me/OromiaInvestmentandIndustryBurea" target="_blank" rel="noopener" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+            <a href="https://www.linkedin.com/in/oromia-investment-and-industry-bureau-42355a318/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
-        <p data-i18n="footer_desc">Leading investment and industrial development in Ethiopia's Oromia Region — offering efficient one-stop services, transparent governance, and strategic opportunities.</p>
-        <div class="footer-social">
-          <a href="https://x.com/investinoromia1" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-          <a href="https://web.facebook.com/oromiainvestc/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://www.youtube.com/@OromiaInvestmentandIndustryBur" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-          <a href="https://t.me/OromiaInvestmentandIndustryBurea" target="_blank" rel="noopener" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
-          <a href="https://www.linkedin.com/in/oromia-investment-and-industry-bureau-42355a318/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+
+        <!-- Col 2 & 3: Important Links -->
+        <div class="footer-col-links">
+          <h3 class="footer-links-title">Important Links</h3>
+          <div class="footer-links-two-cols">
+            <ul>
+              <li><a href="https://www.biio.gov.et" target="_blank" rel="noopener">Oromia Investment and Industry Bureau Service Delivery Reform Information System (SDRIS)</a></li>
+              <li><a href="https://esw.et/esw-trd/" target="_blank" rel="noopener">Ethiopian Electronics Single Windows</a></li>
+              <li><a href="https://investethiopia.gov.et/" target="_blank" rel="noopener">Ethiopian Investment Commission</a></li>
+              <li><a href="https://www.moi.gov.et" target="_blank" rel="noopener">Minister of Industry</a></li>
+              <li><a href="https://www.oipdc.org/" target="_blank" rel="noopener">Oromia industrial parks</a></li>
+            </ul>
+            <ul>
+              <li><a href="https://www.oromia.gov.et/" target="_blank" rel="noopener">Oromia President Office</a></li>
+              <li><a href="#">Oromia Land Bureau</a></li>
+              <li><a href="#">Oromia Agriculture Bureau</a></li>
+              <li><a href="#">Oromia Tourism Commission</a></li>
+              <li><a href="#">Ethio Lease</a></li>
+              <li><a href="https://www.gadasez.gov.et/" target="_blank" rel="noopener">Gada Special Economic Zone</a></li>
+              <li><a href="https://customs.erca.gov.et/trade/" target="_blank" rel="noopener">Ethiopian Customs Commission</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Col 4: Google Map Embed -->
+        <div class="footer-col-map">
+          <div class="footer-map-card">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.5377!2d38.7573!3d8.9806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sSarbet%2C%20Addis%20Ababa!5e0!3m2!1sen!2set!4v1698000000000"
+              width="100%" height="190" style="border:0; border-radius:12px;"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="OIIB Office Location — Sarbet, Finfine">
+            </iframe>
+          </div>
         </div>
       </div>
-      <div class="footer-links">
-        <h4 data-i18n="ft_quick">Quick Links</h4>
-        <ul>
-          <li><a href="#home" data-i18n="nav_home">Home</a></li>
-          <li><a href="#why" data-i18n="nav_why">Why Oromia</a></li>
-          <li><a href="#sectors" data-i18n="nav_opps">Opportunities</a></li>
-          <li><a href="#apply" data-i18n="dd_apply">Apply Online</a></li>
-          <li><a href="#track" data-i18n="qa4_title">Track Application</a></li>
-          <li><a href="#news" data-i18n="nav_news">News</a></li>
-        </ul>
-      </div>
-      <div class="footer-links">
-        <h4 data-i18n="ft_sectors">Sectors</h4>
-        <ul>
-          <li><a href="#sectors" data-i18n="s_agri">Agriculture</a></li>
-          <li><a href="#sectors" data-i18n="s_mfg">Manufacturing</a></li>
-          <li><a href="#sectors" data-i18n="s_tour">Tourism</a></li>
-          <li><a href="#sectors" data-i18n="s_ict">ICT</a></li>
-          <li><a href="#sectors" data-i18n="s_mine">Mining</a></li>
-        </ul>
-      </div>
-      <div class="footer-links">
-        <h4 data-i18n="ft_legal">Legal</h4>
-        <ul>
-          <li><a href="#" data-i18n="ft_privacy">Privacy Policy</a></li>
-          <li><a href="#" data-i18n="ft_terms">Terms of Service</a></li>
-          <li><a href="#" data-i18n="ft_cookie">Cookie Policy</a></li>
-          <li><a href="#security" data-i18n="ft_sec">Security</a></li>
-          <li><a href="#faq" data-i18n="dd_faq">FAQ</a></li>
-        </ul>
-      </div>
     </div>
-    <div class="footer-bottom">
-      <p data-i18n="ft_copy">© 2025 Oromia Investment &amp; Industry Bureau (OIIB). All rights reserved.</p>
-      <p><a href="https://investinoromia.et" target="_blank" rel="noopener">investinoromia.et</a></p>
-    </div>
+
+    <!-- Vertical Back To Top Label (Right Edge) -->
+    <button class="footer-vertical-backtotop" id="vertical-back-to-top" aria-label="Back to top">
+      BACK TO TOP
+    </button>
   </footer>
 
   <!-- ===== FAQ MODAL ===== -->

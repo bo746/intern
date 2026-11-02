@@ -389,20 +389,49 @@ function initApplicationTracker() {
   });
 }
 
-/* ===== LANGUAGE SWITCHER (Weakness #6) ===== */
+/* ===== LANGUAGE DROPDOWN ===== */
 function initLanguageSwitcher() {
-  const buttons = document.querySelectorAll('.lang-btn');
-  buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      buttons.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
-      btn.classList.add('active');
-      btn.setAttribute('aria-pressed', 'true');
-      const lang = btn.dataset.lang;
+  const dropdown = document.getElementById('lang-dropdown');
+  const toggle = document.getElementById('lang-toggle');
+  const menu = document.getElementById('lang-menu');
+  const currentLabel = document.getElementById('lang-current');
+  const options = document.querySelectorAll('.lang-option');
+  if (!dropdown || !toggle) return;
+
+  const langNames = { en: 'English', am: '\u12A0\u121B\u122D\u129B', om: 'Afaan Oromoo' };
+
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = dropdown.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen);
+  });
+
+  options.forEach(opt => {
+    opt.addEventListener('click', () => {
+      options.forEach(o => { o.classList.remove('active'); o.setAttribute('aria-selected', 'false'); });
+      opt.classList.add('active');
+      opt.setAttribute('aria-selected', 'true');
+      const lang = opt.dataset.lang;
+      currentLabel.textContent = langNames[lang] || 'English';
       applyLanguage(lang);
       document.documentElement.lang = lang;
-      // RTL for Arabic
-      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      dropdown.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
     });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.lang-dropdown')) {
+      dropdown.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      dropdown.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
   });
 }
 
@@ -606,3 +635,82 @@ document.addEventListener('click', e => {
     });
   });
 })();
+
+
+/* ===== HERO SLIDER CONTROLLER (Screenshot Match) ===== */
+(function initHeroSlider() {
+  const slides = document.querySelectorAll('.hero-slide');
+  const prevBtn = document.getElementById('hero-prev-btn');
+  const nextBtn = document.getElementById('hero-next-btn');
+  if (!slides.length) return;
+
+  let current = 0;
+  let timer = null;
+
+  function goToSlide(index) {
+    slides[current].classList.remove('active');
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add('active');
+  }
+
+  function startAutoplay() {
+    stopAutoplay();
+    timer = setInterval(() => goToSlide(current + 1), 6000);
+  }
+
+  function stopAutoplay() {
+    if (timer) clearInterval(timer);
+  }
+
+  prevBtn?.addEventListener('click', () => {
+    goToSlide(current - 1);
+    startAutoplay();
+  });
+
+  nextBtn?.addEventListener('click', () => {
+    goToSlide(current + 1);
+    startAutoplay();
+  });
+
+  startAutoplay();
+})();
+
+/* ===== SEARCH TOGGLE POPUP ===== */
+(function initSearchToggle() {
+  const toggleBtn = document.getElementById('search-toggle-btn');
+  const searchBox = document.getElementById('nav-search-box');
+  const searchInput = document.getElementById('global-search');
+  if (!toggleBtn || !searchBox) return;
+
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = searchBox.classList.toggle('open');
+    if (isOpen) {
+      setTimeout(() => searchInput?.focus(), 100);
+    }
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('#nav-search-box') && !e.target.closest('#search-toggle-btn')) {
+      searchBox.classList.remove('open');
+    }
+  });
+})();
+
+
+/* ===== VERTICAL BACK TO TOP BUTTON (Matching Image 2) ===== */
+document.querySelectorAll('#vertical-back-to-top').forEach(btn => {
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+});
+
+/* ===== WHY OROMIA INTERACTIVE CHECKLIST ===== */
+document.querySelectorAll('.why-check-row').forEach(row => {
+  row.addEventListener('click', () => {
+    document.querySelectorAll('.why-check-badge').forEach(b => b.classList.remove('active'));
+    const badge = row.querySelector('.why-check-badge');
+    if (badge) badge.classList.add('active');
+  });
+});
+
